@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            background-color: #f5e1da;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            overflow: hidden;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeIn 1s;
+        }
+        .message {
+            color: #333;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            animation: fadeIn 1.5s;
+        }
+        .gallery {
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .confetti {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="confetti" id="confetti"></div>
+    <h1>Happy Birthday [Her Name]!</h1>
+    <p class="message">Here's to a day filled with love, joy, and wonderful memories.</p>
+    
+    <div class="gallery">
+        <img src="image1.jpg" alt="Memory 1">
+        <img src="image2.jpg" alt="Memory 2">
+        <img src="image3.jpg" alt="Memory 3">
+    </div>
+
+    <button class="button" onclick="showSurprise()">Click for a Surprise!</button>
+    
+    <script src="script.js"></script> <!-- Link to the external script file -->
+</body>
+</html>
