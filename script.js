@@ -1,5 +1,5 @@
 function showSurprise() {
-    alert("I love you more than words can say! 💖");
+    window.location.href = 'wish.html'; // Redirect to the wish page
 }
 
 // Confetti effect
